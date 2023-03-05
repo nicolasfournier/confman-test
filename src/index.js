@@ -1,5 +1,3 @@
-/*
-
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
 
@@ -23,5 +21,3 @@ function App({ signOut, user }) {
 }
 import { withAuthenticator } from '@aws-amplify/ui-react'
 export default withAuthenticator(App)
-
-*/
