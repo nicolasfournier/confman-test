@@ -1,3 +1,5 @@
+/*
+
 import Amplify from 'aws-amplify'
 import config from './aws-exports'
 
@@ -9,7 +11,17 @@ ReactDOM.render(
       <App />
     </AmplifyProvider>,
     document.getElementById('root')
-  )
+)
 
-  import { withAuthenticator } from '@aws-amplify/ui-react'
-  export default withAuthenticator(App)
+function App({ signOut, user }) {
+    return (
+      <div>
+        <h1>Hey, {user.attributes.email}</h1>
+        <button onClick={signOut}>Sign out</button>
+      </div>
+    )
+}
+import { withAuthenticator } from '@aws-amplify/ui-react'
+export default withAuthenticator(App)
+
+*/
